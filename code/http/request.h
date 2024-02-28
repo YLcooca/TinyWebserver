@@ -53,7 +53,7 @@ class HttpRequest {
   static bool userVerify(const std::string &name, const std::string &pwd,
                          bool is_login);
 
-  PARSE_STATE state_{-1};
+  PARSE_STATE state_{};
   std::string method_{""};
   std::string path_{""};
   std::string version_{""};

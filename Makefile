@@ -1,6 +1,8 @@
 all:
-	mkdir -p bin
 	cd build && make
 
+debug:
+	cd build && make debug
+
 clean:
-	rm -rf ../bin/
+	rm -rf ./bin/server*

@@ -13,6 +13,7 @@ void HttpConn::init(int fd, const sockaddr_in &addr) {
   write_buffer_.RetrieveAll();
   read_buffer_.RetrieveAll();
   is_close_ = false;
+  fd_ = fd;
   LOG_INFO("client[%d](%s:%d) in", fd_, getIP(), getPort());
 }
 
